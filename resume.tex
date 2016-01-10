@@ -1,0 +1,242 @@
+% resume.tex
+%
+% (c) 2009 Joseph O'Pecko
+
+\documentclass[margin,line]{resume}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+  linkcolor=darkblue,urlcolor=darkblue,
+  anchorcolor=darkblue,citecolor=darkblue}
+
+%-------------------------------------------------------------
+% Margin setup
+
+\setlength{\textheight}{10in}
+
+%-------------------------------------------------------------
+%\newenvironment{list1}{
+%  \begin{list}{\ding{113}}{%
+%      \setlength{\itemsep}{0in}
+%      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+%      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+%      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{bullet-list}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+%-------------------------------------------------------------
+\begin{document}
+\name{Joe O'Pecko \vspace*{.1in}}
+\begin{resume}
+
+% Contact Information
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{3.87in}}
+__ADDRESS_1__     & \hfill{\it Voice:}   __PHONE__\\
+__ADDRESS_2__     & \hfill{\it E-mail:}  __EMAIL__\\
+\end{tabular}
+
+\begin{format}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{format}
+
+% Professional Experience
+\section{\sc Professional Experience}
+
+%% Spright
+\employer{\textbf{Spright}}
+\title{Senior Software Engineer}
+\location{San Francisco, CA}
+\dates{February 2015 - present}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Responsible for implementing, monitoring, maintaining, provisioning,
+and improving all infrastructure and services
+\item Employed a polyglot, microservice-based architecture to build the
+web and mobile platforms
+\item Spearheaded the move to a container-based deployment model in order
+to affect cost-savings and institute a more consistent delivery stream
+\end{bullet-list}
+\end{position}
+
+%% Extole
+\employer{\textbf{Extole, Inc.}}
+\title{Senior Architect}
+\location{San Francisco, CA}
+\dates{April 2014 - February 2015}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Built a profile tracking and reporting subsystem
+that identified valuable marketing segments to help clients' promote to
+their strategic advocates within the Extole platform
+\end{bullet-list}
+\end{position}
+
+%% Sojern
+\employer{\textbf{Sojern}}
+\title{Member Technical Staff}
+\location{San Francisco, CA}
+\dates{January 2013 - April 2014}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Designed, implemented, provisoned and operationalized a full
+stack, dual-cloud, display advertising realtime bidding and audience
+targeting system capable of handling large, variable volumes of traffic
+\item Created a big data pipeline for getting information
+into the analytics cluster for detailed reporting and offline modeling
+\item Continuously sought out areas of improvement in the product and
+quickly responded to outages while tracking down and fixing concurrency
+and performance issues in the codebase
+\end{bullet-list}
+\end{position}
+
+%% InMobi
+\employer{\textbf{InMobi}}
+\title{Senior Software Engineer - InMobi Studio}
+\location{San Francisco, CA}
+\dates{May 2012 - January 2013}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Migrated the Sprout Builder product, rebranded as InMobi Studio,
+from PHP / Drupal to a Java-based stack backed by MongoDB
+\item Designed and implemented the product's REST API and implemented
+the Spring Security framework to secure the endpoints and provide
+the appropriate access controls
+\item Introduced Jasmine, Sinon.JS, and PhantomJS into the project to
+get the BackboneJS front-end under test
+\end{bullet-list}
+\end{position}
+
+%% Adobe
+\employer{\textbf{Adobe}}
+\title{Senior Software Engineer - Test \& Target}
+\location{San Francisco, CA}
+\dates{August 2010 - May 2012}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Developed a display advertising realtime bidding system, with strict
+performance tolerances, able to accommodate multiple platform vendors
+\item Re-engineered parts of the existing behavioral modeling system's supervised
+learning algorithms to a big data, map-reduce architecture
+\item Stabilized the production network
+\end{bullet-list}
+\end{position}
+
+%% IBM
+\employer{\textbf{IBM/Micromuse}}
+\title{Technical Team Lead - Netcool Impact}
+\location{Greater New York City Area}
+\dates{September 2005 - August 2010}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Applied technical expertise to identify and fix key areas of the product
+needing improvement, specifically those related to systems integration,
+concurrency, RMI, and JEE
+\item Componentized the Impact policy engine and evangelized to other product
+teams
+\item Provided on-site support to troubleshoot and remedy critical implementation
+issues
+\item Instituted best practices, including continuous integration and
+testing technologies, over three major releases, a number of minor
+releases, and fix packs
+\end{bullet-list}
+\end{position}
+
+%% VZW
+\employer{\textbf{Verizon Wireless}}
+\title{Consultant - CGS Technology Associates}
+\location{Warren, New Jersey}
+\dates{May 2005 - September 2005}
+\begin{position}
+\vspace{-.3cm}
+%{\bf Verizon Wireless}, Warren, New Jersey USA\\
+%{\em Consultant - CGS Technology Associates, LLC} \hfill {\bf
+%  May 2005 - September 2005}\\
+\begin{bullet-list}
+\item Reviewed third-party code and reported out to senior management
+regarding defects and potential issues, including those related to resource
+utilization and concurrency
+\item Identified opportunities in vendor code base for enhancements and
+optimizations
+\item Introduced and administered a CVS server for the project's source
+artifacts
+\end{bullet-list}
+\end{position}
+
+%% Goldman
+\employer{\textbf{Goldman Sachs \& Co}}
+\title{Senior Consultant - Keane Inc.}
+\location{Jersey City, New Jersey}
+\dates{January 2005 - May 2005}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Designed and developed an API to integrate the portal with the Goldman
+Sachs LDAP directory
+\item Integrated existing authorization and entitlement services within the portal
+\item Analyzed existing legacy system to assist in re-engineering it into a
+more maintainable and extensible system
+\item Served on the Technical Execution Team charged with the task of providing
+technical leadership, strategic vision, and execution guidelines
+\end{bullet-list}
+\end{position}
+
+%% Merck
+\employer{\textbf{Merck \& Co., Inc.}}
+\title{Senior Systems Analyst}
+\location{Whitehouse Station, New Jersey}
+\dates{December 2000 - January 2005}
+\begin{position}
+\vspace{-.3cm}
+\begin{bullet-list}
+\item Designed and developed web-based applications for various business units
+\item Mentored junior associates in Object Oriented methodologies and process and
+quality management
+\item Developed and implemented application architecture for the ESS Organization
+\item Collaborated with internal partners to develop, and implement system
+requirements in an agile manner
+\end{bullet-list}
+\end{position}
+
+% Education
+\section{\sc Education}
+{\bf Stevens Institute of Technology}, Hoboken, New Jersey USA\\
+%{\em Department of Computer Science}
+\vspace*{-.1in}
+\begin{list1}
+\item[] Masters Certificate, Distributed Systems  (4.0 GPA)
+\end{list1}
+
+{\bf Rutgers College}, New Brunswick, New Jersey USA\\
+%{\em Department of XXX}
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.A., Biomathematics
+\end{list1}
+
+% Professional Affiliations
+%\section{\sc Professional Affiliations}
+%{\bf New York Clojure Meetup Group}, New York, New York USA\\
+%{\bf New York Java Users Group}, New York, New York USA\\
+%{\bf Princeton Java Users Group}, Princeton, New Jersey USA\\
+%{\bf Skarven Ruby Users Group}, Berkeley Heights, New Jersey USA\\
+%{\bf Association for Computing Machinery}\\
+%{\bf Institute of Electrical and Electronics Engineers}\\
+
+\end{resume}
+\end{document}
