@@ -62,9 +62,8 @@
 \vspace{-.3cm}
 \begin{bullet-list}
 \item Lead the migration of API access control off Red Hat 3scale before its 2027 end of life, moving keys, plans, entitlements and rate limits into a first-party service, across the OpenResty/Lua gateway and the Scala auth service
-\item Designed and shipped OAuth 2.0 for AI agent clients of the Crunchbase MCP server (Client ID Metadata Documents, PKCE, refresh-token rotation with reuse detection, SSRF defenses)
+\item Designed the multi-tenant OAuth 2.0 provider and API key system and led a team of 4 engineers through delivery, then extended it for AI agent clients of the Crunchbase MCP server (Client ID Metadata Documents, PKCE, refresh-token rotation with reuse detection, SSRF defenses)
 \item Architected the CRM integration service for bi-directional sync with Salesforce and HubSpot, and led its migration to Scala 3 and to PKCE with rotating refresh tokens
-\item Designed the multi-tenant OAuth 2.0 provider and API key system, and led a team of 4 engineers through delivery
 \item Diagnosed production latency incidents in the core entity service, traced them to Elasticsearch load and abusive scrapers, and wrote the on-call runbook
 \item Maintain the shared Scala libraries, sbt plugin and CI actions that the team uses, and built a Go canary to replace the legacy Node.js one
 \end{bullet-list}
