@@ -39,10 +39,10 @@
 % Contact Information
 \section{\sc Contact Information}
 \vspace{.05in}
-\begin{tabular}{@{}p{3.87in}p{2in}}
-{\it LinkedIn:} \href{https://www.linkedin.com/in/\LinkedInHandle/}{linkedin/\LinkedInHandle} & \hfill{\it Mobile:} \Phone\\
-{\it Github:} \href{https://www.github.com/\GithubHandle}{\GithubHandle} & \hfill{\it Email:} \href{mailto:\Email}{\Email}\\
-\end{tabular}
+\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+{\it LinkedIn:} \href{https://www.linkedin.com/in/\LinkedInHandle/}{linkedin/\LinkedInHandle} & {\it Mobile:} \Phone\\
+{\it GitHub:} \href{https://www.github.com/\GithubHandle}{\GithubHandle} & {\it Email:} \href{mailto:\Email}{\Email}\\
+\end{tabular*}
 
 \begin{format}
   \employer{l}\title{r}\\
@@ -55,17 +55,18 @@
 
 %% Crunchbase
 \employer{\textbf{Crunchbase}}
-\title{Senior Staff Engineer}
+\title{Staff $\rightarrow$ Senior Staff Engineer (November 2023)}
 \location{San Francisco, CA (Remote)}
 \dates{January 2020 - present}
 \begin{position}
 \vspace{-.3cm}
 \begin{bullet-list}
-\item Architected and implemented a scalable backend service to orchestrate bi-directional data flows between the platform and customer CRMs, enabling seamless account matching and data export to power sales prospecting workflows
-\item Designed and directed development of a secure, multi-tenant OAuth 2.0 provider and API key authentication system, enabling consistent integration and access control across the platform while mentoring a team of engineers through delivery
-\item Developed and maintained internal Scala libraries and sbt plugin infrastructure, enabling multiple project teams to share common tooling, enforce best practices, and accelerate delivery
-\item Built a culture of continuous learning by pairing with other engineers, organizing knowledge-sharing sessions, and promoting modern software engineering practices
-\item Resolved high-priority, complex technical challenges, such as ensuring transactional consistency and reliability across a distributed CQRS architecture
+\item Lead the migration of API access control off Red Hat 3scale before its 2027 end of life, moving keys, plans, entitlements and rate limits into a first-party service, across the OpenResty/Lua gateway and the Scala auth service
+\item Designed and shipped OAuth 2.0 for AI agent clients of the Crunchbase MCP server (Client ID Metadata Documents, PKCE, refresh-token rotation with reuse detection, SSRF defenses)
+\item Architected the CRM integration service for bi-directional sync with Salesforce and HubSpot, and led its migration to Scala 3 and to PKCE with rotating refresh tokens
+\item Designed the multi-tenant OAuth 2.0 provider and API key system, and led a team of 4 engineers through delivery
+\item Diagnosed production latency incidents in the core entity service, traced them to Elasticsearch load and abusive scrapers, and wrote the on-call runbook
+\item Maintain the shared Scala libraries, sbt plugin and CI actions that the team uses, and built a Go canary to replace the legacy Node.js one
 \end{bullet-list}
 \end{position}
 
@@ -78,7 +79,7 @@
 \vspace{-.3cm}
 \begin{bullet-list}
 \item Led the cross-team initiative to replace cookies with headers for requests on the Instagram API
-\item Responsible for the cross stack authorization initiative for thrift calls spanning product universes
+\item Owned the cross-stack authorization initiative for Thrift calls between product universes
 \end{bullet-list}
 \end{position}
 
@@ -90,9 +91,9 @@
 \begin{position}
 \vspace{-.3cm}
 \begin{bullet-list}
-\item Built out a reactive, distributed, cloud-native platform to support a world class document productivity and eSigning platform on a full AWS stack
-\item Designed and implemented the Nitro Licensing System aiding in the next phase of company growth
-\item Led the Dropbox file actions launch partner integration, providing Nitro with huge exposure and an enticing PR opportunity to showcase our platform to potentially millions of leads
+\item Built a reactive, distributed AWS platform for the Nitro document and eSigning products
+\item Designed and implemented the Nitro licensing system
+\item Led the Nitro integration as a launch partner for Dropbox file actions
 \end{bullet-list}
 \end{position}
 
@@ -104,8 +105,7 @@
 \begin{position}
 \vspace{-.3cm}
 \begin{bullet-list}
-\item Founding team member focused on delivering reliable and cost effective full-stack software development solutions utilizing CI/CD pipelines
-\item Employed a polyglot, distributed architecture for the web/mobile platforms
+\item Founding team member. Built the distributed web and mobile platforms in Clojure, Scala, Node.js and React Native, with CI/CD pipelines
 \end{bullet-list}
 \end{position}
 
@@ -117,7 +117,7 @@
 \begin{position}
 \vspace{-.3cm}
 \begin{bullet-list}
-\item Built a distributed, big-data, profile tracking and reporting subsystem that identified valuable marketing segments to help clients promote to their strategic advocates within the Extole platform
+\item Built a distributed profile tracking and reporting subsystem that found high-value marketing segments, so clients could target their strongest advocates
 \end{bullet-list}
 \end{position}
 
@@ -129,26 +129,15 @@
 \begin{position}
 \vspace{-.3cm}
 \begin{bullet-list}
-\item Designed, implemented, and operationalized a full stack, dual-cloud, display advertising realtime bidding and audience targeting system capable of handling large, variable volumes of traffic
-\item Created a pipeline for getting data into the analytics cluster for reporting and offline modeling
+\item Designed, built and operated a dual-cloud display advertising real-time bidding and audience targeting system that answered thousands of bid requests per second within a 100\,ms deadline
+\item Built the pipeline that fed the analytics cluster for reporting and offline modeling
 \end{bullet-list}
 \end{position}
 
 % Education
 \section{\sc Education}
-{\bf Stevens Institute of Technology}, Hoboken, NJ USA\\
-%{\em Department of Computer Science}
-\vspace*{-.1in}
-\begin{list1}
-\item[] Masters Certificate, Distributed Systems  (4.0 GPA)
-\end{list1}
-
-{\bf Rutgers College}, New Brunswick, NJ USA\\
-%{\em Department of XXX}
-\vspace*{-.1in}
-\begin{list1}
-\item[] B.A., Biomathematics
-\end{list1}
+{\bf Stevens Institute of Technology} \hfill Masters Certificate, Distributed Systems (4.0 GPA)\\
+{\bf Rutgers College} \hfill B.A., Biomathematics
 
 \end{resume}
 \end{document}
